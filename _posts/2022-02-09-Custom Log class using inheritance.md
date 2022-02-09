@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample Log Class using inheritance
+title: Custom Log Class using inheritance
 date: 2022-02-09 17:42
 category: C++
 author: 
@@ -8,7 +8,7 @@ tags: []
 summary: 
 ---
 
-Today I looked into TensorRT sample codes(trtexec) and I figured out an useful code snippet.
+I looked into TensorRT sample codes(trtexec) and I found an useful code snippet.
 
 ```c++
 #include <iostream>

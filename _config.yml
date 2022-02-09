@@ -35,6 +35,12 @@ plugins:
 
 timezone: Asia/Seoul
 
+utterances:
+  repo: "camiyu1/camiyu1.github.io.comments"
+  issue-term: "title"
+  label: "Comments"
+  theme: "dark-blue"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
