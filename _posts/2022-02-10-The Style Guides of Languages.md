@@ -24,7 +24,8 @@ There are a bunch of style guides, and I think it is helpful to read style guide
 
 - [Protocol Buffers Style Guide](https://developers.google.com/protocol-buffers/docs/style)
 
-One interesting thing is that the preferable indentation is **two** spaces in C++ and **four** spaces in Python and C.
-Sometimes developers use a set of multiple guidelines to build their coding guideline like [this](https://github.com/NVIDIA/TensorRT/blob/main/CODING-GUIDELINES.md).
+One interesting thing is that the preferable indentation is **two** spaces in Google C++ style guide and **four** spaces in Python and C style guides.
+
+Sometimes developers use a set of multiple guidelines to build their coding guideline like [TensorRT-OSS](https://github.com/NVIDIA/TensorRT/blob/main/CODING-GUIDELINES.md) and [ONNX Runtime](https://github.com/microsoft/onnxruntime/blob/master/docs/Coding_Conventions_and_Standards.md), etc.
 
 I will keep this post updated later.
