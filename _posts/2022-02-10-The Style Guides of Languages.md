@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Style Guide of Languages
+title: The Style Guides of Languages
 date: 2022-02-10 09:48
 category: 
 author: 
