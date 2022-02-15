@@ -8,9 +8,9 @@ tags: []
 summary:
 ---
 
-When I began to study C++, one hard to understand is to know the difference between "copy" and "assignment".
-And one is to know the concept of Lvalue and Rvalue.
-Moreover, to know the concept of Lvalue reference, Rvalue reference.
+When I began to study C++, one thing hard to understand is to know the difference between "copy" and "assignment".
+And other is to know the concept of Lvalue and Rvalue.
+Moreover is to know the concept of Lvalue reference, Rvalue reference.
 
 So I post the basic Rule of All(Rule of Five) code snippet to catch up with a basic concept.
 
@@ -19,7 +19,7 @@ So I post the basic Rule of All(Rule of Five) code snippet to catch up with a ba
 #include <iostream>
 
 class RuleFive {
-public:
+ public:
   ~RuleFive() {
     std::cout << "5. Destructing " << std::hex << this << std::endl;
     if (p_val_ != nullptr) delete p_val_;
@@ -31,7 +31,7 @@ public:
   RuleFive(RuleFive& other) : p_val_(new int(*other.p_val_)) {
     std::cout << "1. Copy constructor" << std::endl;
   }
-  RuleFive(RuleFive&& other) : p_val_(new int(*other.p_val_)) {
+  RuleFive(RuleFive&& other) : p_val_(other.p_val_) {
     std::cout << "2. Move constructor" << std::endl;
   }
   RuleFive& operator=(RuleFive& other) {
@@ -45,9 +45,10 @@ public:
     return *this;
   }
 
-private:
+ private:
   int* p_val_ = nullptr;
 };
+
 
 int main() {
     RuleFive A;
